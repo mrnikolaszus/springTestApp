@@ -1,6 +1,6 @@
 package com.nickzoos.springtestapp.model.enums;
 
-public enum Size {
+public enum Dimensions {
     HEAVY,
     MEDIUM,
     LIGHT

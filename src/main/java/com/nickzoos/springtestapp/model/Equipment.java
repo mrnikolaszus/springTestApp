@@ -1,7 +1,7 @@
 package com.nickzoos.springtestapp.model;
 
-import com.nickzoos.springtestapp.model.enums.Discount;
-import com.nickzoos.springtestapp.model.enums.Status;
+import com.nickzoos.springtestapp.model.enums.Dimensions;
+import com.nickzoos.springtestapp.model.enums.Type;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Enumerated;
@@ -16,17 +16,17 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "client")
-public class Client extends BaseEntity {
+@Table(name = "equipment")
+public class Equipment extends BaseEntity {
 
     @Column(nullable = false)
     private String name;
     @Column
     private Integer age;
     @Enumerated
-    private Status status;
+    private Type type;
     @Enumerated
-    private Discount discount;
+    private Dimensions dimensions;
 
 
 }
